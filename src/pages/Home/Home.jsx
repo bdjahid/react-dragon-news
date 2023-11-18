@@ -16,10 +16,10 @@ const Home = () => {
             <BreakingNews></BreakingNews>
             <Navbar></Navbar>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <div className="border">
+                <div>
                     <LeftSide></LeftSide>
                 </div>
-                <div className="md:col-span-2 border">
+                <div className="md:col-span-2">
                     {
                         news.map(aNews => <NewsCard
                             key={aNews._id}
@@ -27,7 +27,7 @@ const Home = () => {
                         ></NewsCard>)
                     }
                 </div>
-                <div className="border">
+                <div>
                     <RightSide></RightSide>
                 </div>
             </div>
